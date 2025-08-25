@@ -1,0 +1,153 @@
+/* Body and calculator container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f0f0, #d9e4f5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    width: 350px;
+    max-width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 26px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Toggle container */
+.toggle-container {
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Button grid */
+.buttons, .scientific-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons general */
+button {
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Operator buttons */
+.btn.operator {
+    background-color: #f9a825;
+    color: #fff;
+}
+
+.btn.equals {
+    background-color: #0d47a1;
+    color: #fff;
+    grid-row: span 2;
+}
+
+.btn.clear {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+#backspace {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+/* Zero button spans two columns */
+.zero {
+    grid-column: span 2;
+}
+
+/* Advanced buttons */
+.btn.operator[data-op="√"],
+.btn.operator[data-op="%"] {
+    background-color: #6a1b9a;
+    color: #fff;
+}
+
+/* Memory buttons */
+.memory {
+    background-color: #00897b;
+    color: #fff;
+}
+
+/* Scientific functions */
+.btn.operator[data-op="sin"],
+.btn.operator[data-op="cos"],
+.btn.operator[data-op="tan"],
+.btn.operator[data-op="log"],
+.btn.operator[data-op="ln"],
+.btn.operator[data-op="!"],
+.btn.operator[data-op="^"],
+.btn.operator[data-op="pi"],
+.btn.operator[data-op="("],
+.btn.operator[data-op=")"] {
+    background-color: #6a1b9a;
+    color: #fff;
+}
+
+/* Scientific container for smooth slide */
+.scientific-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Show when active */
+.scientific-container.active {
+    max-height: 500px; /* enough to show all scientific buttons */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        padding: 10px;
+    }
+    button {
+        padding: 14px;
+        font-size: 16px;
+    }
+    #display {
+        height: 50px;
+        font-size: 20px;
+    }
+    .toggle-container {
+        font-size: 14px;
+    }
+}

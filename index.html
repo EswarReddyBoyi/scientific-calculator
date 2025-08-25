@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientific Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="display" placeholder="0">
+
+    <!-- Toggle for Scientific Mode -->
+    <div class="toggle-container">
+        <label>
+            <input type="checkbox" id="modeToggle">
+            Scientific Mode
+        </label>
+    </div>
+
+    <div class="buttons">
+        <!-- Memory Buttons (Scientific Only) -->
+        <button class="btn memory scientific-only" data-op="MC">MC</button>
+        <button class="btn memory scientific-only" data-op="MR">MR</button>
+        <button class="btn memory scientific-only" data-op="M+">M+</button>
+        <button class="btn memory scientific-only" data-op="M-">M-</button>
+
+        <button class="btn clear" id="clear">AC</button>
+        <button class="btn operator" data-op="%">%</button>
+        <button class="btn operator" data-op="√">√</button>
+        <button class="btn operator" data-op="/">/</button>
+
+        <!-- Scientific Functions (Scientific Only) -->
+        <button class="btn operator scientific-only" data-op="sin">sin</button>
+        <button class="btn operator scientific-only" data-op="cos">cos</button>
+        <button class="btn operator scientific-only" data-op="tan">tan</button>
+        <button class="btn operator scientific-only" data-op="^">^</button>
+        <button class="btn operator scientific-only" data-op="log">log</button>
+        <button class="btn operator scientific-only" data-op="ln">ln</button>
+        <button class="btn operator scientific-only" data-op="!">!</button>
+        <button class="btn operator" data-op="*">*</button>
+        <button class="btn operator scientific-only" data-op="(">(</button>
+        <button class="btn operator scientific-only" data-op=")">)</button>
+
+        <!-- Numbers -->
+        <button class="btn number" data-num="7">7</button>
+        <button class="btn number" data-num="8">8</button>
+        <button class="btn number" data-num="9">9</button>
+        <button class="btn operator" data-op="-">-</button>
+
+        <button class="btn number" data-num="4">4</button>
+        <button class="btn number" data-num="5">5</button>
+        <button class="btn number" data-num="6">6</button>
+        <button class="btn operator" data-op="+">+</button>
+
+        <button class="btn number" data-num="1">1</button>
+        <button class="btn number" data-num="2">2</button>
+        <button class="btn number" data-num="3">3</button>
+
+        <button class="btn clear" id="backspace">⌫</button>
+        <button class="btn number zero" data-num="0">0</button>
+        <button class="btn number" data-num=".">.</button>
+        <button class="btn operator scientific-only" data-op="pi">π</button>
+        <button class="btn equals" id="equals">=</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
