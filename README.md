@@ -46,7 +46,7 @@ A **fully-featured scientific calculator** built with **HTML, CSS, and JavaScrip
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/scientific-calculator.git
+git clone https://github.com/22BCE8093-Eswar/scientific-calculator.git
 cd scientific-calculator
 ```
 ###2. Open Locally
