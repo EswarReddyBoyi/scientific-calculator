@@ -100,8 +100,8 @@ Screenshots
     <th> Scientific Mode (Mobile)</th>
   </tr>
   <tr>
-    <td><img src="assets/image1.png" width="370"/></td>
-    <td><img src="assets/image2.png" width="330"/></td>
+    <td><img src="image1.png" width="370"/></td>
+    <td><img src="image2.jpeg" width="330"/></td>
   </tr>
 </table>
 
