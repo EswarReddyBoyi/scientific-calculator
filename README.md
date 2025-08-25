@@ -94,10 +94,16 @@ scientific-calculator/
 └── README.md           # Project documentation
 
 Screenshots
-Floating Calculator (Desktop)
-
-Scientific Mode (Mobile)
-
+<table>
+  <tr>
+    <th> Floating Calculator (Desktop)</th>
+    <th> Scientific Mode (Mobile)</th>
+  </tr>
+  <tr>
+    <td><img src="assets/image1.png" width="370"/></td>
+    <td><img src="assets/image2.png" width="330"/></td>
+  </tr>
+</table>
 
 License
 This project is licensed under the MIT License – see the LICENSE
