@@ -101,7 +101,7 @@ Screenshots
   </tr>
   <tr>
     <td><img src="image1.png" width="370"/></td>
-    <td><img src="image2.jpeg" width="330"/></td>
+    <td><img src="image2.jpeg" width="130"/></td>
   </tr>
 </table>
 
