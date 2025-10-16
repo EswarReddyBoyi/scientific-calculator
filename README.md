@@ -2,6 +2,8 @@
 
 A **fully-featured scientific calculator** built with **HTML, CSS, and JavaScript**, designed to work on both desktop and mobile devices. The calculator supports **basic arithmetic**, **scientific operations**, **memory functions**, **brackets**, **factorials**, **powers**, and **trigonometric functions**. It can be toggled between **Basic Mode** and **Scientific Mode**, and it can **float anywhere on the screen** as a draggable, resizable popup widget.
 
+***Demo Link:*** https://scientific-calculator-c9fdf.web.app/
+
 ---
 
 ## **Features**
