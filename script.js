@@ -14,7 +14,11 @@ display.addEventListener('click', e => cursorPos = display.selectionStart);
 function updateDisplay() {
     display.value = currentInput;
     display.setSelectionRange(cursorPos, cursorPos);
-    display.focus();
+
+    // Only focus on non-touch devices (desktop)
+    if (!('ontouchstart' in window)) {
+        display.focus();
+    }
 }
 
 // Toggle scientific mode
